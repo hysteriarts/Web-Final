@@ -14,13 +14,6 @@
     <style>
         @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
-        .flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: auto; /* Agrega esta propiedad para habilitar el desplazamiento horizontal */
-    white-space: nowrap; /* Evita que los elementos se envuelvan en varias líneas */
-}
         .navbar {
             background-color: transparent;
         }
@@ -192,27 +185,29 @@
     </nav>
 
     <section>
-        <div class="item_flex">
-            <a href="img/_MG_8589.jpg" target="_blank"></a>
-            <img alt="Imagen 1" src="img/Candy01.jpg" title="Candy Party Photoshoot" class="img-fluid">
-        </div>
+        <div class="flex-container">
+            <div class="item_flex nowrap ">
+                <a href="img/_MG_8589.jpg" target="_blank"></a>
+                <img alt="Imagen 1" src="img/Candy01.jpg" title="Candy Party Photoshoot" class="img-fluid">
+            </div>
 
-        <div class="item_flex">
-            <a href="img/Candy02.jpg" target="_blank"></a>
-            <img alt="Imagen 1" src="img/Candy02.jpg" title="Candy Party Photoshoot" class="img-fluid">
-        </div>
+            <div class="flex-container">
+                <div class="item_flex">
+                    <a href="img/Candy02s.jpg" target="_blank"></a>
+                    <img alt="Imagen 2" src="img/Candy02.jpg" title="Candy Party Photoshoot">
+                </div>
 
-        <div class="item_flex">
-            <a href="img/Orbea01.jpg" target="_blank"></a>
-            <img alt="Imagen 1" src="img/Orbea01.jpgs" title="Candy Party Photoshoot" class="img-fluid">
-        </div>
-
-
-                    <div class="item_flex">
-                        <a href="img/Candy03.jpg" target="_blank"></a>
-                        <img alt="Imagen 1" src="img/Candy03.jpg" title="Candy Party Photoshoot" class="img-fluid">
+                <div class="flex-container">
+                    <a href="img/Orbea01.jpg" target="_blank"></a>
+                    <div class="item_flex" style="flex-basis:auto">3
+                        <img alt="Imagen 3" src="img/Orbea01.jpg" title="Orbea Moncayo restored">
                     </div>
-            
+
+                    <div class="flex-container">
+                        <a href="img/Candy03.jpg" target="_blank"></a>
+                        <div class="item_flex">
+                            <img alt="Imagen 4" src="img/Candy03.jpg" title="Candy Party Photoshoot">
+                        </div>
 
 
 
